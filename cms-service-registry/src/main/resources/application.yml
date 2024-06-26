@@ -1,6 +1,6 @@
 eureka:
   instance:
-    hostname: localhost
+    hostname: 54.85.13.204
   
   client:
     register-with-eureka: false

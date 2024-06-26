@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  cms-user-service:
+    image: b71bb79d6329
+    container_name: cms-user-service
+    ports:
+      - "8081:8081"
+
+  service-registry:
+    image: 3dd0bac86de4
+    container_name: service-registry
+    ports:
+      - "8761:8761"
+
+  cms-policy-service:
+    image: c290325efe94
+    container_name: cms-policy-service
+    ports:
+      - "8082:8082"
+
+  insurance-management-system:
+    image: 1cfd42071ff8
+    container_name: insurance-management-system
+    ports:
+      - "3000:3000"
+
+  cms-claim-service:
+    image: 867f0715dd36
+    container_name: cms-claim-service
+    ports:
+      - "8083:8083"
+
+  cms-api-gateway:
+    image: d01236a2caf8
+    container_name: cms-api-gateway
+    ports:
+      - "9000:9000"
+
